@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const estudantes = [
+            {
+                name: "João",
+                nota1: 6,
+                nota2: 6
+            },
+
+            {
+                name: "Letícia",
+                nota1: 10,
+                nota2: 9
+            },
+
+            {
+                name: "Diego",
+                nota1: 10,
+                nota2: 8
+            },
+
+            {
+                name: "Júlia",
+                nota1: 10,
+                nota2: 1
+            },
+
+        ]
+
+        let calcularMedia = function (n1, n2) {
+            let media = (n1 + n2) / 2
+            return media
+        }
+
+        for (let estudante of estudantes) {
+            mediaEstudante = calcularMedia(estudante.nota1, estudante.nota2)
+            if (mediaEstudante >= 7) {
+
+                alert(`
+                A média do(a) aluno(a) ${estudante.name} é: ${mediaEstudante}
+                Parabéns, ${estudante.name}! Você foi aprovado(a) no concurso!`)
+            } else {
+                alert(`
+                A média do(a) aluno(a) ${estudante.name} é: ${mediaEstudante}
+                Não foi desta vez, ${estudante.name}! Tente novamente!`)
+            }
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
